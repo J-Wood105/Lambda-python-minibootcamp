@@ -36,5 +36,5 @@ def addfood():
 def favorite():
     connection = sqlite3.connect('database.db')
     cursor = connection.cursor()
-    query = cursor.execute('SELECT * FROM foods WHERE name = "potato"')
+    query = cursor.execute('SELECT * FROM foods',)
     return query
